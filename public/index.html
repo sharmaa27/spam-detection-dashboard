@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Analytics & Spam Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Review Analytics Dashboard</h1>
+            <p>Real-time spam detection and text analysis.</p>
+        </header>
+
+        <div class="grid">
+            <div class="panel upload-panel">
+                <h2>Submit New Review</h2>
+                <form id="reviewForm">
+                    <input type="text" id="productName" placeholder="Product Name" required>
+                    <textarea id="reviewText" placeholder="Paste user review here for analysis..." rows="5" required></textarea>
+                    <button type="submit">Analyze Review</button>
+                </form>
+            </div>
+
+            <div class="panel">
+                <h2>System Logs</h2>
+                <div id="reviewFeed" class="feed">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
